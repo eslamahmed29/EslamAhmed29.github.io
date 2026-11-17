@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eslam Ahmed | .NET Software Engineer & Enterprise Architect</title>
+  <meta name="description" content="Portfolio of Eslam Ahmed — .NET Software Engineer with 3+ years of experience building Enterprise ERP & CRM systems with ASP.NET Core, EF Core, and SQL Server." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated Background Grid & Glows -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>Eslam<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Tech Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle Dark/Light Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="https://drive.google.com/file/d/1CAw13C5YfNA8dd0Dxqh3yrJ0mGl3x5L7/preview" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+          Resume PDF
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>.NET Software Engineer • 3+ Years Experience</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Eslam Ahmed</span>
+          </h1>
+
+          <div class="typing-wrapper">
+            <span class="terminal-prompt">~/backend $</span>
+            <span id="typingText" class="typing-text"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            I design and build high-performance <strong>Enterprise ERP &amp; CRM platforms</strong> using
+            <strong>ASP.NET Core</strong>, <strong>Entity Framework Core</strong>, and <strong>SQL Server</strong>—turning
+            complex business workflows into clean, scalable systems serving <strong>50+ enterprise users</strong> and
+            <strong>1M+ customer records</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/EslamAhmed29" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/eslamahmed29" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:eslamahmed2915@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Code & Architecture Card -->
+        <div class="hero-visual reveal">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="file-name">EnterpriseArchitecture.cs</span>
+              <span class="lang-badge">.NET 8</span>
+            </div>
+            <pre class="code-body"><code><span class="kw">public sealed class</span> <span class="cls">EslamAhmed</span> : <span class="iface">IBackendEngineer</span>
+{
+    <span class="kw">public string</span> Role =&gt; <span class="str">".NET Software Engineer"</span>;
+    <span class="kw">public string[]</span> Focus =&gt; [
+        <span class="str">"Enterprise ERP &amp; CRM Systems"</span>,
+        <span class="str">"Clean Architecture &amp; SOLID"</span>,
+        <span class="str">"SQL Server (1M+ Records)"</span>,
+        <span class="str">"Hangfire &amp; Third-Party APIs"</span>
+    ];
+
+    <span class="kw">public async Task</span>&lt;<span class="cls">Result</span>&gt; <span class="fn">OptimizeLookupAsync</span>()
+        =&gt; <span class="kw">await</span> _db.Customers
+            .<span class="fn">AsNoTracking</span>()
+            .<span class="fn">WithIndexedSearch</span>()
+            .<span class="fn">DeliverFastResponseAsync</span>();
+}</code></pre>
+          </div>
+
+          <div class="floating-badge badge-top">
+            <span class="badge-icon">⚡</span>
+            <div>
+              <strong>1M+ Records</strong>
+              <span>Indexed SQL Search</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <span class="badge-icon">🏛️</span>
+            <div>
+              <strong>Clean Architecture</strong>
+              <span>8+ ERP Core Modules</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS STRIP -->
+    <section class="metrics-section">
+      <div class="container metrics-grid">
+        <div class="metric-card reveal">
+          <div class="metric-value"><span class="counter" data-target="3">0</span>+</div>
+          <div class="metric-label">Years Experience in .NET</div>
+        </div>
+        <div class="metric-card reveal">
+          <div class="metric-value"><span class="counter" data-target="1">0</span>M+</div>
+          <div class="metric-label">Customer Records Managed</div>
+        </div>
+        <div class="metric-card reveal">
+          <div class="metric-value"><span class="counter" data-target="50">0</span>+</div>
+          <div class="metric-label">Daily Enterprise Users</div>
+        </div>
+        <div class="metric-card reveal">
+          <div class="metric-value"><span class="counter" data-target="100">0</span>+</div>
+          <div class="metric-label">Developers Mentored</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & ENGINEERING PILLARS -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2>Engineering Reliable <span class="gradient-text">Backend Systems</span></h2>
+          <p>Bridging complex enterprise business rules with clean, maintainable, and high-throughput .NET architectures.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">🏗️</div>
+            <h3>Clean Architecture &amp; SOLID</h3>
+            <p>Structuring modular enterprise backends with clear separation of concerns, Dependency Injection, Repository Pattern, and Unit of Work.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">🚀</div>
+            <h3>SQL Server &amp; Query Tuning</h3>
+            <p>Designing relational schemas, stored procedures, views, and indexing strategies that keep search fast across 1M+ customer records.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">🔐</div>
+            <h3>Security &amp; Integrations</h3>
+            <p>Implementing JWT authentication, granular Role-Based Access Control (RBAC), Hangfire background jobs, and resilient 3rd-party APIs.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">🎓</div>
+            <h3>Mentorship &amp; Code Quality</h3>
+            <p>Mentored 100+ aspiring backend developers through hands-on OOP, Design Patterns, Clean Architecture, and real-world code reviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Career Journey</span>
+          <h2>Experience &amp; <span class="gradient-text">Education</span></h2>
+          <p>3+ years of shipping enterprise software, leading backend workflows, and mentoring developers.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker active"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Backend Software Engineer</h3>
+                  <span class="company">Euro Assist • Egypt</span>
+                </div>
+                <span class="date-badge current">June 2024 – Present</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Engineer and maintain production platforms serving <strong>50+ internal users</strong> and managing <strong>1M+ customer records</strong> with ASP.NET Core, EF Core, and SQL Server.</li>
+                <li>Accelerated customer search lookups across multi-million-row tables via query optimization and strategic database indexing.</li>
+                <li>Architected 8 core <strong>Horus ERP</strong> modules (Accounting, Inventory, Production, Sales, Purchasing, HR, CRM, Reporting) and enhanced financial &amp; costing reports.</li>
+                <li>Built operational dispatch workflows, Hangfire background jobs, and third-party integrations for <strong>Roadside Assistance CRM</strong> and <strong>Medical Insurance CRM</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Backend Development Instructor (Part-Time)</h3>
+                  <span class="company">Middleware Academy • Egypt</span>
+                </div>
+                <span class="date-badge">June 2024 – Oct 2026</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Mentored <strong>100+ students</strong> in C#, ASP.NET Core, Entity Framework Core, SQL Server, and RESTful APIs.</li>
+                <li>Delivered practical workshops covering OOP, SOLID Principles, Design Patterns, Clean Architecture, and relational database design.</li>
+                <li>Conducted thorough code reviews and prepared interview-focused assignments and real-world backend projects.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Backend Software Engineer (Freelance)</h3>
+                  <span class="company">Art Of Coding • Egypt</span>
+                </div>
+                <span class="date-badge">2023</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Architected the backend for <strong>El Burhan Academy</strong> using ASP.NET Core Web API, JWT Authentication, and Role-Based Authorization.</li>
+                <li>Integrated RESTful APIs with a React frontend and deployed the live production environment on Microsoft Azure.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker edu"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Bachelor of Computer Science</h3>
+                  <span class="company">El Shorouk Academy • Grade: Good</span>
+                </div>
+                <span class="date-badge">Graduated 2024</span>
+              </div>
+              <p class="edu-note">Strong foundation in Data Structures, Algorithms, Object-Oriented Programming, and Database Management Systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2>Featured <span class="gradient-text">Projects</span></h2>
+          <p>Click any project card to explore the system architecture, my engineering role, and key technical highlights.</p>
+        </div>
+
+        <div class="filter-tabs reveal" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="filter-btn" data-filter="enterprise">Enterprise ERP &amp; CRM</button>
+          <button class="filter-btn" data-filter="freelance">Freelance &amp; Cloud</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Horus ERP -->
+          <article class="project-card reveal" data-category="enterprise" data-project="horus-erp">
+            <div class="project-image-wrap">
+              <img src="assets/images/horus-erp.jpg" alt="Horus ERP Dashboard Mockup" loading="lazy" />
+              <span class="project-badge">Enterprise ERP</span>
+            </div>
+            <div class="project-body">
+              <h3>Horus ERP</h3>
+              <p>Full-scale 8-module Enterprise Resource Planning system unifying Accounting, Inventory, Production, Sales, Purchasing, HR, CRM, and Costing Reports.</p>
+              <div class="project-tags">
+                <span>ASP.NET Core</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+                <span>Clean Architecture</span>
+              </div>
+              <button class="project-link-btn" type="button">
+                View Architecture &amp; Role →
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Roadside Assistance CRM -->
+          <article class="project-card reveal" data-category="enterprise" data-project="roadside-crm">
+            <div class="project-image-wrap">
+              <img src="assets/images/roadside-crm.jpg" alt="Roadside Assistance CRM Mockup" loading="lazy" />
+              <span class="project-badge">Production CRM</span>
+            </div>
+            <div class="project-body">
+              <h3>Roadside Assistance CRM</h3>
+              <p>High-availability CRM managing live dispatch operations, Hangfire background jobs, third-party integrations, and 1M+ customer lookups.</p>
+              <div class="project-tags">
+                <span>ASP.NET Core</span>
+                <span>Hangfire</span>
+                <span>SQL Indexing</span>
+                <span>3rd-Party APIs</span>
+              </div>
+              <button class="project-link-btn" type="button">
+                View Architecture &amp; Role →
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Medical Insurance CRM -->
+          <article class="project-card reveal" data-category="enterprise" data-project="medical-crm">
+            <div class="project-image-wrap">
+              <img src="assets/images/medical-crm.jpg" alt="Medical Insurance CRM Mockup" loading="lazy" />
+              <span class="project-badge">Healthcare CRM</span>
+            </div>
+            <div class="project-body">
+              <h3>Medical Insurance CRM</h3>
+              <p>Secure healthcare CRM streamlining patient management, medical approvals, claims processing, and insurance billing workflows.</p>
+              <div class="project-tags">
+                <span>ASP.NET Core</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+                <span>RBAC &amp; JWT</span>
+              </div>
+              <button class="project-link-btn" type="button">
+                View Architecture &amp; Role →
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Medical Supplies Inventory System -->
+          <article class="project-card reveal" data-category="freelance" data-project="medical-inventory">
+            <div class="project-image-wrap">
+              <img src="assets/images/medical-inventory.jpg" alt="Medical Supplies Inventory System Mockup" loading="lazy" />
+              <span class="project-badge">Freelance Client</span>
+            </div>
+            <div class="project-body">
+              <h3>Medical Supplies Inventory</h3>
+              <p>Warehouse management system tracking inbound/outbound medical tools &amp; supplies with daily, monthly, and annual stocktaking audits.</p>
+              <div class="project-tags">
+                <span>ASP.NET Core</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+                <span>Audit Reports</span>
+              </div>
+              <button class="project-link-btn" type="button">
+                View Architecture &amp; Role →
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5: El Burhan Academy -->
+          <article class="project-card reveal" data-category="freelance" data-project="el-burhan">
+            <div class="project-image-wrap">
+              <img src="assets/images/el-burhan-academy.jpg" alt="El Burhan Academy Mockup" loading="lazy" />
+              <span class="project-badge">Cloud &amp; EdTech</span>
+            </div>
+            <div class="project-body">
+              <h3>El Burhan Academy</h3>
+              <p>Educational platform built with ASP.NET Core Web API, JWT authentication, React frontend integration, and Microsoft Azure deployment.</p>
+              <div class="project-tags">
+                <span>ASP.NET Core API</span>
+                <span>JWT Auth</span>
+                <span>React</span>
+                <span>Microsoft Azure</span>
+              </div>
+              <button class="project-link-btn" type="button">
+                View Architecture &amp; Role →
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Capabilities</span>
+          <h2>Technical <span class="gradient-text">Stack</span></h2>
+          <p>Production-tested tools, frameworks, and architectural patterns I use to deliver reliable systems.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Backend &amp; Frameworks</h3>
+            <div class="skill-pills">
+              <span>C#</span><span>ASP.NET Core</span><span>ASP.NET MVC</span><span>Entity Framework Core</span>
+              <span>LINQ</span><span>RESTful APIs</span><span>SignalR</span><span>Hangfire</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Architecture &amp; Security</h3>
+            <div class="skill-pills">
+              <span>Clean Architecture</span><span>SOLID Principles</span><span>Design Patterns</span>
+              <span>Dependency Injection</span><span>Repository Pattern</span><span>Unit of Work</span>
+              <span>JWT Authentication</span><span>RBAC</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Database &amp; Performance</h3>
+            <div class="skill-pills">
+              <span>SQL Server</span><span>Stored Procedures</span><span>Views</span>
+              <span>Indexing Strategies</span><span>Query Optimization</span><span>DBMS</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Cloud, DevOps &amp; Frontend</h3>
+            <div class="skill-pills">
+              <span>Microsoft Azure</span><span>Git &amp; GitHub</span><span>Visual Studio</span>
+              <span>Postman</span><span>Docker</span><span>JavaScript</span><span>HTML5 &amp; CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Let's Build Something <span class="gradient-text">Scalable</span></h2>
+          <p>Looking for a .NET Backend Engineer to architect enterprise systems, optimize database performance, or join your engineering team? Let's talk.</p>
+
+          <div class="contact-cards">
+            <button class="contact-card copy-btn" data-copy="eslamahmed2915@gmail.com" type="button">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <small>Email (Click to Copy)</small>
+                <strong>eslamahmed2915@gmail.com</strong>
+              </div>
+            </button>
+
+            <button class="contact-card copy-btn" data-copy="+201288513225" type="button">
+              <span class="contact-icon">📱</span>
+              <div>
+                <small>Phone (Click to Copy)</small>
+                <strong>+20 128 851 3225</strong>
+              </div>
+            </button>
+
+            <a class="contact-card" href="https://www.linkedin.com/in/eslamahmed29" target="_blank" rel="noopener">
+              <span class="contact-icon">💼</span>
+              <div>
+                <small>LinkedIn</small>
+                <strong>in/eslamahmed29</strong>
+              </div>
+            </a>
+
+            <a class="contact-card" href="https://github.com/EslamAhmed29" target="_blank" rel="noopener">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <small>GitHub</small>
+                <strong>@EslamAhmed29</strong>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-cta">
+            <a href="https://drive.google.com/file/d/1CAw13C5YfNA8dd0Dxqh3yrJ0mGl3x5L7/preview" target="_blank" rel="noopener" class="btn btn-primary">
+              Download Full Resume (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <strong>Eslam Ahmed</strong>. Crafted with precision for .NET &amp; Enterprise Engineering.</p>
+      <a href="#hero" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="modal-image">
+        <img id="modalImg" src="" alt="" />
+      </div>
+      <div class="modal-content">
+        <span class="modal-category" id="modalCategory"></span>
+        <h3 id="modalTitle"></h3>
+        <p class="modal-role" id="modalRole"></p>
+        <p class="modal-summary" id="modalSummary"></p>
+        <h4>Key Engineering Highlights</h4>
+        <ul class="modal-highlights" id="modalHighlights"></ul>
+        <div class="modal-tags" id="modalTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
